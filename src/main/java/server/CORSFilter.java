@@ -1,4 +1,4 @@
-package dupa;
+package server;
 
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerResponseContext;
@@ -6,9 +6,6 @@ import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 
-/**
- * Created by grzes on 16.06.17.
- */
 @Provider
 public class CORSFilter implements ContainerResponseFilter {
 

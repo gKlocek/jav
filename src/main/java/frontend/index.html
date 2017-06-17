@@ -1,35 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet"
-href="styles.css"
-type="text/css" />
-<body>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Jersey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>q
 <p>Click the button to display a time-based greeting xD :</p>
 <a href="#" class="button" onclick="myFunction(1)"></a>
 <a href="#" class="button" onclick="myFunction(2)"></a> <br/>
 <a href="#" class="button" onclick="myFunction(3)"></a>
 <a href="#" class="button" onclick="myFunction(4)"></a>
 
-xD
 <p id="demo"></p>
-<script>
-    function myFunction(nr) {
-        var xhttp = new XMLHttpRequest();
+<script src="script.js">
 
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              document.getElementById("demo").innerHTML = this.responseText;
-            }
-            else {
-               document.getElementById("demo").innerHTML =  this.readyState + " "+ this.status;   //this.status zwraca 0
-            }
-        };
-        xhttp.open("POST", "http://localhost:2222/home/post/", true);
-        xhttp.setRequestHeader("Content-type", "application/json");
-        xhttp.send(JSON.stringify({fieldNumber:nr}));
-      }
 
-    // http://localhost:2222/home/post
 
 </script>
 
