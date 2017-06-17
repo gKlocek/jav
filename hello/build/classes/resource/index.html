@@ -1,80 +1,8 @@
-<!--
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Simple Jersey</title>
-    <style>
-        .button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 32px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-<p>Click the button to display a time-based greeting xD :</p>
-<a href="#" class="button" onclick="myFunction(1)"></a>
-<a href="#" class="button" onclick="myFunction(2)"></a> <br/>
-<a href="#" class="button" onclick="myFunction(3)"></a>
-<a href="#" class="button" onclick="myFunction(4)"></a>
-
-
-<script>
-    // http://localhost:2222/home/post
-    function myFunction(nr) {
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'http://localhost:2222/home/post',true);
-        xmlhttp.setRequestHeader("Content-Type", "application/json");
-        xhr.onload = function () {
-            // do something to response
-            console.log(this.responseText);
-        };
-        xhr.send(JSON.stringify({fieldNumber:nr}));
-    }
-</script>
-
-</body>
-</html>
-
-
--->
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Simple Jersey</title>
-    <style>
-        .button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 32px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-    </style>
-</head>
+<link rel="stylesheet"
+href="styles.css"
+type="text/css" />
 <body>
 <p>Click the button to display a time-based greeting xD :</p>
 <a href="#" class="button" onclick="myFunction(1)"></a>

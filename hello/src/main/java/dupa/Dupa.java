@@ -13,6 +13,7 @@ public class Dupa {
     public static void main(String[] args) {
         ResourceConfig config = new ResourceConfig();
         config.packages("dupa");
+        config.register(new CORSFilter());
         ServletHolder servlet = new ServletHolder(new ServletContainer(config));
 
         Server server = new Server(2222);
