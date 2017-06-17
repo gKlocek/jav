@@ -6,7 +6,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.servlet.ServletContainer;
 
-public class Dupa {
+public class JettyServer {
     public static void main(String[] args) {
         ResourceConfig config = new ResourceConfig();
         config.packages("server");
